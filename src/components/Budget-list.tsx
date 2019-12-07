@@ -1,7 +1,5 @@
 import * as React from 'react'
-
 import { BudgetItemObjInterface, BudegetListInterface } from '../interfaces'
-
 import BudgetItem from './budget-item'
 
 const BudgetList = (props: BudegetListInterface) => {
