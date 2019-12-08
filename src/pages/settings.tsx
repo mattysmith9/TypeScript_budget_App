@@ -7,13 +7,10 @@ const SettingsPage = (props: SettingsPageInterface) => (
   <div>
     <header>
       <h2>Settings</h2>
-
       <Link className="btn btn-cross btn-unstyled" to="/">⨯</Link>
     </header>
-
     <fieldset>
       <label htmlFor="period">Budget period:</label>
-
       <select
         onChange={(event) => props.setBudgetPeriod(event.target.value)}
         name="period"
@@ -25,10 +22,8 @@ const SettingsPage = (props: SettingsPageInterface) => (
         <option value="yearly">Yearly</option>
       </select>
     </fieldset>
-
     <fieldset>
       <label htmlFor="currency">Budget currency:</label>
-
       <input
         onChange={(event) => props.setBudgetCurrency(event.target.value)}
         name="currency"
@@ -36,15 +31,12 @@ const SettingsPage = (props: SettingsPageInterface) => (
         defaultValue={props.budgetCurrency}
         list="currencyCodes"
       />
-
       <datalist id="currencyCodes">
         {currencyCodes.map(code => <option key={code} value={code} />)}
       </datalist>
     </fieldset>
-
     <fieldset>
       <label htmlFor="budget">Budget size:</label>
-
       <input
         onChange={(event) => props.setBudgetAmount(parseInt(event.target.value, 10))}
         type="number"
@@ -53,10 +45,8 @@ const SettingsPage = (props: SettingsPageInterface) => (
         defaultValue={props.budgetAmount}
       />
     </fieldset>
-
     <fieldset>
       <label htmlFor="storage">Preferred storage method:</label>
-
       <select
         onChange={(event) => props.setStorageMethod(event.target.value)}
         name="storage"
@@ -68,7 +58,6 @@ const SettingsPage = (props: SettingsPageInterface) => (
         <option value="session">Session storage</option>
       </select>
     </fieldset>
-
     <p><small><em>* All changes are saved automatically.</em></small></p>
   </div>
 )
