@@ -2,14 +2,15 @@
 :root {
   --color-black: #1e272e;
   --color-blue: #0fbcf9;
-  --color-gray: #ccc;
-  --color-green: #0be881;
+  --color-gray: rgb(85, 60, 194);
+  --color-green: #31d286;
   --color-red: #ff3f34;
 }
 
 /* Default styles */
 html {
   box-sizing: border-box;
+  background-color: rgba(238, 236, 240, 0.543);
 }
 
 *,
@@ -26,7 +27,8 @@ body,
 
 body {
   margin: 0;
-  font: 16px / 1.414 sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
   color: var(--color-black);
 }
 
@@ -48,7 +50,7 @@ h2 {
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 28px;
 }
 
 a {
@@ -146,7 +148,7 @@ select {
   padding: 6px 0;
   width: 100%;
   font-size: 14px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border: 0;
   border-bottom: 1px solid var(--color-gray);
 }
